@@ -69,13 +69,13 @@ function Unsplash() {
             const { likes, urls, id } = pack;
             return (
               <>
-                <div key={id} className="mx-auto pt-2 bg-gray-300 mt-6 rounded-md">
+                <div key={id} className="mx-auto pt-2 bg-gray-200 mt-6 rounded-md">
                   <img
                     className="w-72 h-64 object-cover mx-2  py-2"
                     src={urls.small}
                     alt=""
                   />
-                  <div className="flex py-2 justify-between  px-4 w-full bg-gray-100">
+                  <div className="flex py-2 justify-between  px-4 w-full bg-gray-300 rounded-b-md">
                     <div className="flex space-x-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ function Unsplash() {
           })
         ) : (
           <center>
-            <div>No Image Found</div>
+            <div>{search} Nothing Found Related This Search</div>
           </center>
         )}
       </div>
