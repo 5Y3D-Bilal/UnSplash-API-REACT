@@ -1,11 +1,11 @@
 import './index.css'
-import Api from './components/api'
+import Unsplash from './components/api'
 
 function App() {
 
   return (
     <>
-     <Api />
+     <Unsplash />
     </>
   )
 }
